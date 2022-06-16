@@ -99,7 +99,7 @@ class Ui_MainWindow(object):
         
 
         
-    def print_text_box(self,liste):
+    def print_text_box(self,liste): #function , The print_text_box function receives the list and prints the list into text box.
         self.label_2.setText("Print the text box chosen")
         self.textEdit.setText(str(liste))
         
@@ -109,7 +109,7 @@ class Ui_MainWindow(object):
         liste=prime.copy()
         return liste
     
-    def print_file(self,listem):
+    def print_file(self,listem): #Similarly, the print_file function receives the list and writes the list into a file
         self.textEdit.clear()
         file=open("MyFile.txt", "w")
         self.label_2.setText("Write the file chosen")
